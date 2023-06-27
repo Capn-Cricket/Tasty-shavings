@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+h1 {
+	font-size: 5em;
+}
+
+h2, h3 {
+	font-size: 3em;
+}
+
+span {
+	display: block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav ul {
+	display: flex;
+	flex-flow: row;
+	justify-content: end;
+	padding-right: 4em;
+	background: #e8f0f2;
+}
+
+nav ul li {
+	margin: 1em 0 1em 0;
+	padding: 0 2em 0 2em;
+}
+
+main {
+	padding: 2% 50% 10% 15%;
+	background: url(assets/shavings2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 30%;
+	border: 3px solid black;
+}
+
+main > div {
+	background: rgba(232, 240, 242, 65%);
+	border-radius: 10%;
+}
+
+main > div > * {
+	padding: 1rem 0rem 1.5rem 1.5rem;
+}
+
+main ul li{
+	display: inline-block;
+}
+
+article {
+	padding: 2% 0 10% 0;
+	background: url(assets/Screws-wide.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 22%;
+	border: 3px solid black;
+}
+
+article > * {
+	padding: 0 20% 0 40%;
+}
+
+article > span, article > p {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+section:first-of-type {
+	text-align: center;
+	background: #f2f6f7;
+	padding: 4em 0;
+}
+
+section:first-of-type > ul li {
+	display: inline-block;
+	padding: 2em 2em 1em 2em;
+	border-bottom: 2px solid black;
+	margin-bottom: 2em;
+}
+
+section:first-of-type > div {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div > img {
+	width: 25%;
+	padding: 0 1em 2em 1em;
+}
+
+address, section:not(:first-of-type) {
+	text-align: center;
+}
+
+
+.hours {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 3% 35%;
+}
+
+address {
+	padding: 3em 0;
+}
+
+address span {
+	padding: 1em 0;
+}
+
+address h3 {
+	padding: 0 0 1rem 0;
+}
+
+address > img {
+	width: 50%;
+}
+/* Last section */
+
+section:not(:first-of-type) {
+	background: #e8f0f2;
+	padding: 2em 25%;
+}
+
+section:not(:first-of-type) > span, section:not(:first-of-type) > p {
+	padding: 1em 2em 0em 2em;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 800px) {
+	div > img {
+		width: 50%;
+		padding: 0 1em 2em 1em;
+	}
+
+	main {
+		padding: 2% 10% 10% 10%;
+	}
+
+	article > * {
+		padding: 0 10% 0 10%;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	
+	h1 {
+		font-size: 4em;
+	}
+	
+	section:first-of-type > div {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	div > img {
+		width: 70%;
+		padding: 0 1em 2em 1em;
+	}
+
+	main {
+		padding: 2% 10% 10% 10%;
+	}
+
+	article > * {
+		padding: 0 10% 0 10%;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+
